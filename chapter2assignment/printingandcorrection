@@ -1,0 +1,16 @@
+Question 2.1
+x = 2
+y = 3
+print("x=", x)
+x= 2
+print((x + y), '=', (y + x))
+5 = 5
+print('value of', x, '+', x, 'is', (x + x) )
+value of 2 + 2 is 4
+
+Question 2.2
+Original code
+rating = input('Enter an integer rating between 1 and 10')
+
+Correction
+Rating = int(input('Enter an integer rating between 1 and 10'))
