@@ -1,0 +1,8 @@
+Ask user to enter a vowel
+Create a variable count
+Store the vowel in a variable userInput
+Convert user input to lowercase
+Check if each of the letters in inputed word equal to aeiou
+If it is equal add one to count
+Return count
+Make function vowel call any input from user.
