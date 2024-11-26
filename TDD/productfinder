@@ -2,3 +2,7 @@ Ask user to input first and second number
 Collect the numbers and store them in a variables firstNumber and secondNumber
 If second number is equal zero, product is zero
 Make the first number count the second number times
+
+
+removing second number in a list:
+
