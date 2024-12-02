@@ -79,7 +79,12 @@ public class Checkout{
 
          System.out.print("SEMICOLON STORES \nMAIN BRANCH \nLOCATION: HERBERT MACAULAY WAY, SABO YABA, LAGOS. \nTEL: 03293828343\n");
          System.out.println("Date: " + myTime +"");
-         System.out.printf("Cashier's name: %s \nCustomer's name: %s \n ===========================================================\n\n                      item   qty      price      total(ngn)\n\n -----------------------------------------------------------\n", cashierName, cus);    
+         System.out.printf("Cashier's name: %s \nCustomer's name: %s \n ===========================================================\n\n                      item   qty      price      total(ngn)\n\n -----------------------------------------------------------\n", cashierName, cus); 
+          
+          for (int number = 0; number < count; number++){
+          System.out.printf("                      %s     %d        %d           %d", items.get(number), prices.get(number), quantity.get(number), amounts.get(number));
+          System.out.println();  
+	}
 
           System.out.printf("\n------------------------------------------------------------\n                sub Total: %d \n                 Discount: %f \n                 VAT: %g \n\n============================================================\n\n                Bill Total: %g \n               Customers Deposit: %g\n              Balance: %g \n===========================================================\n\n THANK YOU FOR YOUR PATRONAGE  \n\n ===========================================================\n",totalTwo, discount, vat, billTotal, customerDeposit, balance);
 
