@@ -1,0 +1,7 @@
+Ask user to input number
+Collect number as string 
+Store in userInput
+Create a variable summation
+Loop through the string 
+Cast it as an integer then 
+Add to summation.
