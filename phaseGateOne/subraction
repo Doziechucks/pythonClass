@@ -1,0 +1,22 @@
+Import the random module
+import datetime module
+
+Initialize a variable correct equals zero
+Create a loop that loops 10 times
+  Generates 10 random numbers stored in numberOne
+  Generates 10 random numbers stored in numberTw0
+  if numberOne > numberTwo
+  print numberOne - numberTwo
+  Collect input from user 
+  If answer correct add 1 to correct
+  if numbertwo > numberOne
+  print numberTwo - numberOne
+  Collect input from user 
+  If answer correct add 1 to correct
+Create a datetime object
+
+Subtract initial time from final time in minutes and seconds
+Print time 
+
+print correct/10
+  
