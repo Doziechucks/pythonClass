@@ -11,7 +11,7 @@ else:
             case 1: print("today is Sunday and the future day is Monday")
             case 2: print("today is Sunday and the future day is Tuesday")
             case 3: print("today is Sunday and the future day is Wednesday")
-            case 4: print("today is Sunday and the future day is Thurday")
+            case 4: print("today is Sunday and the future day is Thursday")
             case 5: print("today is Sunday and the future day is Friday")
             case 1: print("today is Sunday and the future day is Saturday")
 
