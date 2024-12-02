@@ -1,0 +1,8 @@
+generate two random numbers 
+Store them in variables 
+Add the two generated numbers
+Store the addition in a variable 
+Print the variables and a plus symbol between them 
+Ask user to input answer
+If answer correct print True
+Else print False
