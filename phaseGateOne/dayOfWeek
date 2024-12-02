@@ -1,0 +1,7 @@
+Ask user to input number for day
+If day lesser or than 0 more that 6
+Print invalid
+Else in range ask user of next day number
+Calculate day number % 7 
+And user the remainder to get next day
+Then print current day and next day 
