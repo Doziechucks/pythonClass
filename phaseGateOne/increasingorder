@@ -1,0 +1,12 @@
+Ask user to input first number 
+Store the first as largest 
+And store the same as least
+Ask user to enter second number 
+If second number higher than largest store as largest
+Or
+If second number lower than least store as least
+Ask user to enter third number 
+If third number higher than largest store as largest
+Or
+If third number lower than least store as least
+check for the number that is neither the nor the largest then store as middle number
