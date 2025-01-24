@@ -5,7 +5,7 @@ class Arrays:
         self.array = []
 
     def add(self, value):
-        if self.size != self.capacity:
+        if self.size < self.capacity:
             self.size += 1
             return self.array.append(value)
 
@@ -23,4 +23,7 @@ class Arrays:
         words += "\'"
         words += "]"
         return words
+
+    def remove(self):
+        wor
 

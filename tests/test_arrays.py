@@ -26,6 +26,15 @@ class MyTestCase(unittest.TestCase):
         actual = array.toString()
         self.assertEqual(expected, actual)
 
+    def test_if_list_can_remove(self):
+        array = Arrays(2)
+        array.add("man")
+        array.add("woman")
+        expected = "['woman']"
+        actual = array.remove("man")
+        self.assertEqual(expected, actual)
+
+
 
 
 
