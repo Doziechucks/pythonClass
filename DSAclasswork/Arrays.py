@@ -1,17 +1,22 @@
+from sqlalchemy import null
+
+
 class Arrays:
-    def __init__(self, size):
+    def __init__(self, capacity):
         self.size = 0
-        self.capacity = size
+        self.capacity = capacity
         self.array = []
 
     def add(self, value):
         if self.size < self.capacity:
             self.size += 1
-            return self.array.append(value)
+            self.array += [value]
+        else:
+            raise ValueError
 
 
     def get_size(self):
-        return self.capacity
+        return self.size
 
     def toString(self):
         words = "["
@@ -24,6 +29,17 @@ class Arrays:
         words += "]"
         return words
 
-    def remove(self):
-        wor
+    def remove(self, word):
+        for number in range(len(self.array) - 1):
+            if self.array[number] == word:
+                self.array[number] = "null"
+        return self.array
 
+
+
+
+    def set(self, index, word):
+        for number in range(len(self.array) - 1):
+            if number == index:
+                self.array[number] = word
+        return self.array
