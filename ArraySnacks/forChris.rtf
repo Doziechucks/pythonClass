@@ -1,0 +1,54 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2707
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red191\green100\blue38;\red32\green32\blue32;\red153\green168\blue186;
+\red160\green0\blue163;\red128\green63\blue122;\red173\green169\blue32;\red254\green187\blue91;\red86\green132\blue173;
+\red117\green114\blue185;\red88\green118\blue71;}
+{\*\expandedcolortbl;;\csgenericrgb\c74902\c39216\c14902;\csgenericrgb\c12549\c12549\c12549;\csgenericrgb\c60000\c65882\c72941;
+\csgenericrgb\c62745\c0\c63922;\csgenericrgb\c50196\c24706\c47843;\csgenericrgb\c67843\c66275\c12549;\csgenericrgb\c99608\c73333\c35686;\csgenericrgb\c33725\c51765\c67843;
+\csgenericrgb\c45882\c44706\c72549;\csgenericrgb\c34510\c46275\c27843;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 class \cf4 OurTime:\
+    \cf2 def \cf5 __init__\cf4 (\cf6 self\cf2 , \cf4 hours\cf2 , \cf4 minutes\cf2 , \cf4 seconds):\
+        \cf6 self\cf4 .__hours = hours\
+        \cf6 self\cf4 .minutes = minutes\
+        \cf6 self\cf4 .seconds = seconds\
+\
+    \cf7 @property\
+    \cf2 def \cf8 __hours\cf4 (\cf6 self\cf4 ):\
+        \cf2 return \cf6 self\cf4 ._hours\
+\
+    \cf7 @__hours.setter\
+    \cf2 def \cf8 __hours\cf4 (\cf6 self\cf2 , \cf4 hours):\
+        \cf2 if \cf4 hours < \cf9 0 \cf2 or \cf4 hours >= \cf9 23\cf4 :\
+            \cf2 raise \cf10 ValueError\cf4 (\cf11 "Invalid hour"\cf4 )\
+        \cf6 self\cf4 ._hours = hours\
+\
+    \cf7 @property\
+    \cf2 def \cf8 minutes\cf4 (\cf6 self\cf4 ):\
+        \cf2 return \cf6 self\cf4 ._minutes\
+\
+    \cf7 @minutes.setter\
+    \cf2 def \cf8 minutes\cf4 (\cf6 self\cf2 , \cf4 minutes):\
+        \cf2 if \cf4 minutes < \cf9 0 \cf2 or \cf4 minutes > \cf9 59\cf4 :\
+            \cf2 raise \cf10 ValueError\cf4 (\cf11 "Invalid minute"\cf4 )\
+        \cf6 self\cf4 ._minutes = minutes\
+\
+    \cf7 @property\
+    \cf2 def \cf8 seconds\cf4 (\cf6 self\cf4 ):\
+        \cf2 return \cf6 self\cf4 ._seconds\
+\
+    \cf7 @seconds.setter\
+\
+    \cf2 def \cf8 seconds\cf4 (\cf6 self\cf2 , \cf4 seconds):\
+        \cf2 if \cf4 seconds < \cf9 0 \cf2 or \cf4 seconds > \cf9 59\cf4 :\
+            \cf2 raise \cf10 ValueError\cf4 (\cf11 "Invalid seconds"\cf4 )\
+        \cf6 self\cf4 ._seconds = seconds\
+\
+    \cf2 def \cf5 __str__\cf4 (\cf6 self\cf4 ):\
+        \cf2 return \cf11 f"Hours:\cf2 \{\cf6 self\cf4 .__hours\cf2 \}\cf11  Minutes:\cf2 \{\cf6 self\cf4 .minutes\cf2 \}\cf11  Seconds:\cf2 \{\cf6 self\cf4 .seconds\cf2 \}\cf11 "\
+\
+\cf4 time1 = OurTime(\cf9 22\cf2 , \cf9 44\cf2 , \cf9 44\cf4 )\
+\cf10 print\cf4 (time1)\
+}
