@@ -1,9 +1,6 @@
-
 from unittest import TestCase
 
-from datastructure.Arrays import Arrays
-
-
+from src.datastructure.Arrays import Arrays
 
 class MyTestCase(TestCase):
     def test_if_arrays_can_add_element(self):
@@ -47,5 +44,4 @@ class MyTestCase(TestCase):
         expected = ["man", "G-string", "girl"]
         actual = array.set(1, "G-string")
         self.assertEqual(expected, actual)
-
 
