@@ -55,6 +55,14 @@ class Account:
         else:
             raise ValueError("invalid credentials")
 
+    @property
+    def account_number(self):
+        return self.__account_number
+
+    @get_account_number.setter
+    def account_number(self, account_number):
+        self.__account_number = account_number
+
 
 
 
