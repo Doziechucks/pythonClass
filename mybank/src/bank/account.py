@@ -2,9 +2,9 @@ class Account:
     def __init__(self, first_name, last_name, account_number, password):
         self.__first_name = first_name
         self.__last_name = last_name
+        self.__password = password
         self.__balance = 0
         self.__account_number = account_number
-        self.__password = password
 
     def password_check(self, input_password):
         if self.__password == input_password:
@@ -28,11 +28,11 @@ class Account:
 
     @property
     def get_last_name(self):
-        return self.__last_name
+        return self.__first_name
 
     @get_last_name.setter
-    def get_last_name(self, last_name):
-        self.__first_name = last_name
+    def get_last_name(self, last_name) -> str:
+        self.__last_name = last_name
 
     def deposit(self, amount):
         if amount > 0:
@@ -56,14 +56,9 @@ class Account:
             raise ValueError("invalid credentials")
 
     @property
-    def account_number(self):
+    def account_number(self) -> int:
         return self.__account_number
 
-    @get_account_number.setter
+    @account_number.setter
     def account_number(self, account_number):
         self.__account_number = account_number
-
-
-
-
-
